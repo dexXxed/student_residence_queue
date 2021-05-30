@@ -1,0 +1,364 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getStudentFromQueue",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "bool"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getStudentFromQueueBenefits",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "bool"
+			},
+			{
+				"name": "",
+				"type": "string"
+			},
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "queue_benefits_pub",
+		"outputs": [
+			{
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"name": "first_name_less",
+				"type": "string"
+			},
+			{
+				"name": "second_name",
+				"type": "string"
+			},
+			{
+				"name": "third_name_less",
+				"type": "string"
+			},
+			{
+				"name": "benefits",
+				"type": "bool"
+			},
+			{
+				"name": "documents",
+				"type": "bool"
+			},
+			{
+				"name": "completed",
+				"type": "bool"
+			},
+			{
+				"name": "room_number",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_id",
+				"type": "uint256"
+			},
+			{
+				"name": "room_number",
+				"type": "uint256"
+			},
+			{
+				"name": "queue",
+				"type": "uint256"
+			}
+		],
+		"name": "toggleCompletedNode",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "begin",
+				"type": "uint256"
+			},
+			{
+				"name": "end",
+				"type": "uint256"
+			},
+			{
+				"name": "text",
+				"type": "string"
+			}
+		],
+		"name": "getSlice",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "queue_count",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "queue_pub",
+		"outputs": [
+			{
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"name": "first_name_less",
+				"type": "string"
+			},
+			{
+				"name": "second_name",
+				"type": "string"
+			},
+			{
+				"name": "third_name_less",
+				"type": "string"
+			},
+			{
+				"name": "benefits",
+				"type": "bool"
+			},
+			{
+				"name": "documents",
+				"type": "bool"
+			},
+			{
+				"name": "completed",
+				"type": "bool"
+			},
+			{
+				"name": "room_number",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "queue_benefits_count",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "first_name",
+				"type": "string"
+			},
+			{
+				"name": "second_name",
+				"type": "string"
+			},
+			{
+				"name": "third_name",
+				"type": "string"
+			},
+			{
+				"name": "benefits",
+				"type": "bool"
+			},
+			{
+				"name": "documents",
+				"type": "string"
+			}
+		],
+		"name": "createNode",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "first_name_less",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "second_name",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "third_name_less",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "benefits",
+				"type": "bool"
+			},
+			{
+				"indexed": false,
+				"name": "documents",
+				"type": "bool"
+			},
+			{
+				"indexed": false,
+				"name": "completed",
+				"type": "bool"
+			},
+			{
+				"indexed": false,
+				"name": "room_number",
+				"type": "uint256"
+			}
+		],
+		"name": "QueueElementCreated",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "completed",
+				"type": "bool"
+			},
+			{
+				"indexed": false,
+				"name": "room_number",
+				"type": "uint256"
+			}
+		],
+		"name": "QueueElementCompleted",
+		"type": "event"
+	}
+]
